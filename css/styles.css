@@ -6,23 +6,48 @@
 
     .visually-hidden {
         position: absolute;
-          white-space: nowrap;
-          width: 1px;
-          height: 1px;
-          overflow: hidden;
-          border: 0;
-          padding: 0;
-          clip: rect(0 0 0 0);
-          clip-path: inset(50%);
-          margin: -1px;}
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;}
 
+    .container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        outline: #000 solid 1px;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul {
+    padding: 0;
+    margin: 0;
+    }
+    
 body{
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;}
 
 .logo-accent-header{   
-     color: #000;}
+    color: #000;}
 
 .logo-accent-footer{
     color: var(--primary-white-color);
@@ -70,7 +95,7 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--primary-white-color); }
 
- .main-button{
+.main-button{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-family: inherit;
@@ -183,5 +208,5 @@ address{font-style: normal;}
         color: var(--accent-color);
     }
 
-  .current{background-color: var(--accent-color);
+.current{background-color: var(--accent-color);
 color: var(--primary-white-color);}
