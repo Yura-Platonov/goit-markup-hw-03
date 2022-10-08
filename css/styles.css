@@ -16,6 +16,27 @@
         clip-path: inset(50%);
         margin: -1px;}
 
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .list {
+            list-style: none}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul {
+        padding: 0;
+        margin: 0;
+        }
+        
     .container {
         width: 1200px;
         margin-left: auto;
@@ -23,24 +44,32 @@
         padding: 0 15px;
         outline: #000 solid 1px;
     }
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+
+    .flex {
+        display: flex;
+        align-items: center;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    ul {
-    padding: 0;
-    margin: 0;
-    }
-    
+
+    .header-nav{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 25px;
+   }
+
+   .logo-header {
+   margin-right: 93px;
+
+    color: var(--accent-color);
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;}
+
+
 body{
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -61,28 +90,49 @@ body{
     font-weight: 700;
     letter-spacing: 0.03em;}
 
-.main-nav {
+
+
+.main-nav .nav-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.main-nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-title-color);
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;}
 
-.main-nav:hover, .main-nav:focus {
+
+.main-nav-link:hover, .main-nav-link:focus {
 color: var(--accent-color);}
 
 .link-current {
     color: var(--accent-color);}
 
-.nav {
+    /* .auth-nav{
+        margin-left: auto;
+    } */
+
+.auth-nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;}
 
-.nav:hover, .nav:focus { 
+.auth-nav-link:hover, .auth-nav-link:focus { 
     color: var(--accent-color);}
+
+    .auth-nav .auth-nav-item:not(:last-child){
+        margin-right: 50px;
+    }
 
 .main-section{
     background-color: #2F303A;}
@@ -153,8 +203,7 @@ letter-spacing: 0.03em;
 
 a {text-decoration: none;}
 
-.list {
-    list-style: none}
+
 
     .portfolio-button{
 font-family: inherit;
