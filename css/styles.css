@@ -281,8 +281,7 @@ letter-spacing: 0.03em;
 }
 
 .logo-footer {
-    display: inline-block;
-margin-top: 60px;
+    display: block;
 margin-bottom: 20px;
 
     color: var(--accent-color);
@@ -292,10 +291,10 @@ margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: 0.03em;}
 
-    .address{
-        display: inline-block;
-        margin-top: 20;
-        margin-bottom: 60px;
+    .footer-contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
     }
 
 a {text-decoration: none;}
@@ -371,6 +370,8 @@ width: 370px;}
 
 .footer {
     background-color: #2f303a;
+    padding: 60px 0;
+
 }
 
 address{font-style: normal;}
